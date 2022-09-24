@@ -33,16 +33,22 @@ int main() {
 }
 
 int existe(char *str_input) {
+
     unsigned int indice;
     size_t ind = strlen(str_input);
+
     for (indice = 0; indice < (strlen(str_input)); indice++) {
         if (str_input[indice] == '+' or str_input[indice] == '-' or str_input[indice] == '*' or
             str_input[indice] == '/') {
+
             char *operator_t = substr(str_input, indice, indice + 1);
             char *operandeLeft = substr(str_input, indice + 1, ind);
             char *operandeRight = substr(str_input, 0, indice);
+
             int val = calculator(operator_t, operandeRight, operandeLeft);
+
             printf("Resultat de %s = %d \n", str_input, val);
+
             return indice;
         }
     }
@@ -50,20 +56,27 @@ int existe(char *str_input) {
 }
 
 char *substr(char *input, unsigned int debut, size_t ind) {
+
     int len = ind - debut;
     char *dest = (char *) malloc(sizeof(char) * (len + 1));
+
     for (int i = debut; i < ind && (*(input + i) != '\0'); i++) {
         *dest = *(input + i);
         dest++;
     }
+
     *dest = '\0';
+
     return dest - len;
 }
 
 int calculator(char *operator_t, char *operandeRight, char *operandeLeft) {
+
     int operande1 = atoi(operandeRight);
     int operande2 = stringToInt(operandeLeft);
+
     int resultat;
+
     if (*operator_t == '+') {
         resultat = operande1 + operande2;
     } else if (*operator_t == '-') {
@@ -73,13 +86,16 @@ int calculator(char *operator_t, char *operandeRight, char *operandeLeft) {
     } else if (*operator_t == '/') {
         resultat = operande1 / operande2;
     }
+
     return resultat;
 }
 
 int stringToInt(char *str_input) {
+
     int indice;
+
     for (indice = 0; indice < (strlen(str_input)); indice++) {
-        int value =  strtol(str_input, NULL, 10);
-        return  value;
+        int value = strtol(str_input, NULL, 10);
+        return value;
     }
 }
