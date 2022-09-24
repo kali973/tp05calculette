@@ -10,6 +10,8 @@ char *substr(char *input, unsigned int i, size_t ind);
 
 int calculator(char *t, char *right, char *left);
 
+int stringToInt(char *left);
+
 int main() {
     char str[1000];
     char reponse[] = "Next";
@@ -60,7 +62,7 @@ char *substr(char *input, unsigned int debut, size_t ind) {
 
 int calculator(char *operator_t, char *operandeRight, char *operandeLeft) {
     int operande1 = atoi(operandeRight);
-    int operande2 = atoi(operandeLeft);
+    int operande2 = stringToInt(operandeLeft);
     int resultat;
     if (*operator_t == '+') {
         resultat = operande1 + operande2;
@@ -72,4 +74,12 @@ int calculator(char *operator_t, char *operandeRight, char *operandeLeft) {
         resultat = operande1 / operande2;
     }
     return resultat;
+}
+
+int stringToInt(char *str_input) {
+    int indice;
+    for (indice = 0; indice < (strlen(str_input)); indice++) {
+        int value =  strtol(str_input, NULL, 10);
+        return  value;
+    }
 }
