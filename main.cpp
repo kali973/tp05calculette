@@ -14,9 +14,9 @@ int stringToInt(char *left);
 
 int main() {
     char str[1000];
-    char reponse[] = "Next";
+    char reponse[] = "next";
 
-    while (strcmp(reponse, "Quit")) {
+    while (strcmp(reponse, "exit")) {
 
         printf("Entrez une chaine de caractéres valide (Exemple : 120+6) :\n");
         scanf("%s", str);
@@ -26,7 +26,7 @@ int main() {
             exit(1);
         }
 
-        printf("(<Quit> pour quitter ou <Next>)\n");
+        printf("(<exit> pour quitter ou <next>)\n");
         scanf("%s", reponse);
     } // while "Quit"
     return 0;
