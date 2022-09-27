@@ -3,4 +3,4 @@ project(tp05calculette)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(tp05calculette main.cpp)
+add_executable(tp05calculette main.c)

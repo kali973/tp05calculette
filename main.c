@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include <cstring>
-#include <cstdlib>
+#include <string.h>
+#include <stdlib.h>
+#include <ctype.h>
 
 int slong(char *s1);
 
@@ -19,7 +20,7 @@ int main() {
     while (strcmp(reponse, "exit")) {
 
         printf("Entrez une chaine de caractéres valide (Exemple : 120+6) :\n");
-        scanf("%s", str);
+        sscanf("%s", str);
 
         if (existe(str) == -1) {
             puts("Vous n'avez pas saisi d'opérateur valable");
@@ -34,11 +35,10 @@ int main() {
 
 int existe(char *str_input) {
 
-    unsigned int indice;
     size_t ind = strlen(str_input);
 
-    for (indice = 0; indice < (strlen(str_input)); indice++) {
-        if (str_input[indice] == '+' or str_input[indice] == '-' or str_input[indice] == '*' or
+    for (unsigned int indice = 0; indice < ind; indice++) {
+        if (str_input[indice] == '+' || str_input[indice] == '-' || str_input[indice] == '*' ||
             str_input[indice] == '/') {
 
             char *operator_t = substr(str_input, indice, indice + 1);
@@ -48,6 +48,10 @@ int existe(char *str_input) {
             int val = calculator(operator_t, operandeRight, operandeLeft);
 
             printf("Resultat de %s = %d \n", str_input, val);
+
+            free(operator_t);
+            free(operandeLeft);
+            free(operandeRight);
 
             return indice;
         }
@@ -73,7 +77,7 @@ char *substr(char *input, unsigned int debut, size_t ind) {
 int calculator(char *operator_t, char *operandeRight, char *operandeLeft) {
 
     int operande1 = atoi(operandeRight);
-    int operande2 = stringToInt(operandeLeft);
+    int operande2 = stringToInt(operandeLeft); //Todo stringToint()
 
     int resultat;
 
@@ -92,10 +96,33 @@ int calculator(char *operator_t, char *operandeRight, char *operandeLeft) {
 
 int stringToInt(char *str_input) {
 
+    // Il existe une fonction de bibliothèque qui fait la même chose atoi ou strtol
     int indice;
 
-    for (indice = 0; indice < (strlen(str_input)); indice++) {
+    for (indice = 0; str_input[indice] != '\0'; indice++) {
         int value = strtol(str_input, NULL, 10);
         return value;
     }
+}
+
+int toString(char a[]) {
+    int c, sign, offset, n;
+    if (a[0] == '-') {  // Handle negative integers
+        sign = -1;
+    }
+
+    if (sign == -1) {  // Set starting position to convert
+        offset = 1;
+    } else {
+        offset = 0;
+    }
+
+    n = 0;
+    for (c = offset; a[c] != '\0'; c++) {
+        n = n * 10 + a[c] - '0';
+    }
+    if (sign == -1) {
+        n = -n;
+    }
+    return n;
 }

@@ -49,9 +49,9 @@ cmake_ninja_workdir = /root/CLionProjectsTP/tp05calculette/cmake-build-debug/
 
 build cmake_object_order_depends_target_tp05calculette: phony || CMakeFiles/tp05calculette.dir
 
-build CMakeFiles/tp05calculette.dir/main.cpp.o: CXX_COMPILER__tp05calculette_Debug /root/CLionProjectsTP/tp05calculette/main.cpp || cmake_object_order_depends_target_tp05calculette
-  DEP_FILE = CMakeFiles/tp05calculette.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++14
+build CMakeFiles/tp05calculette.dir/main.c.o: C_COMPILER__tp05calculette_Debug /root/CLionProjectsTP/tp05calculette/main.c || cmake_object_order_depends_target_tp05calculette
+  DEP_FILE = CMakeFiles/tp05calculette.dir/main.c.o.d
+  FLAGS = -g
   OBJECT_DIR = CMakeFiles/tp05calculette.dir
   OBJECT_FILE_DIR = CMakeFiles/tp05calculette.dir
 
@@ -63,7 +63,7 @@ build CMakeFiles/tp05calculette.dir/main.cpp.o: CXX_COMPILER__tp05calculette_Deb
 #############################################
 # Link the executable tp05calculette
 
-build tp05calculette: CXX_EXECUTABLE_LINKER__tp05calculette_Debug CMakeFiles/tp05calculette.dir/main.cpp.o
+build tp05calculette: C_EXECUTABLE_LINKER__tp05calculette_Debug CMakeFiles/tp05calculette.dir/main.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/tp05calculette.dir
   POST_BUILD = :
