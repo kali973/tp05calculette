@@ -65,6 +65,10 @@ char *trim(char *withSpace, int len) {
     return withSpace;
 }
 
+/*-------------------------------------------------------------------*/
+/* function control of read value operator and values to compute     */
+/*-------------------------------------------------------------------*/
+
 int existe(char *strWithoutSpace) {
 
     int len = strlen(strWithoutSpace) -1;
@@ -84,12 +88,14 @@ int existe(char *strWithoutSpace) {
                 int operator1 = strToint(operatorRight);
                 int operator2 = strToint(operatorLeft);
 
+                // if the first operator is a negative value
                 if (strWithoutSpace[0] == '-') {
                     operator1 = operator1 * -1;
                 }
 
                 printf("Result is %s = %d \n", strWithoutSpace, calculator(operator_t, operator1, operator2));
 
+                // free of memory
                 free(operator_t);
                 free(operatorLeft);
                 free(operatorRight);
@@ -101,6 +107,10 @@ int existe(char *strWithoutSpace) {
     return (-1);
 }
 
+/*-------------------------------------*/
+/* function substring String           */
+/*-------------------------------------*/
+
 char *substr(char *input, unsigned int debut, size_t ind) {
 
     int len = ind - debut;
@@ -110,15 +120,15 @@ char *substr(char *input, unsigned int debut, size_t ind) {
         *result = *(input + i);
         result++;
     }
-
     *result = '\0';
-
     return result - len;
 }
 
+/*---------------------------------------*/
+/* function to calculate two values      */
+/*---------------------------------------*/
+
 int calculator(char *operator_t, int operator1, int operator2) {
-
-
 
     int resultat;
 
@@ -131,10 +141,12 @@ int calculator(char *operator_t, int operator1, int operator2) {
     } else if (*operator_t == '/') {
         resultat = operator1 / operator2;
     }
-
     return resultat;
 }
 
+/*---------------------------------------*/
+/* function to convert String to integer */
+/*---------------------------------------*/
 
 int strToint(char str[]) {
     int i = 0, sum = 0;
