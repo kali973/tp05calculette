@@ -1,4 +1,4 @@
-"/root/Bureau/Outils & Produits Jetbrains/clion-2022.1.2/bin/cmake/linux/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /root/CLionProjects/tp05calculette -B /root/CLionProjects/tp05calculette/cmake-build-debug
+"/root/Bureau/Outils & Produits Jetbrains/clion-2022.1.2/bin/cmake/linux/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /root/CLionProjectsTP/tp05calculette -B /root/CLionProjectsTP/tp05calculette/cmake-build-debug
 -- The C compiler identification is GNU 12.1.0
 -- The CXX compiler identification is GNU 12.1.0
 -- Detecting C compiler ABI info
@@ -13,4 +13,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /root/CLionProjects/tp05calculette/cmake-build-debug
+-- Build files have been written to: /root/CLionProjectsTP/tp05calculette/cmake-build-debug

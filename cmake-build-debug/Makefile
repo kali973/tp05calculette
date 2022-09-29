@@ -57,10 +57,10 @@ RM = "/root/Bureau/Outils & Produits Jetbrains/clion-2022.1.2/bin/cmake/linux/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/CLionProjects/tp05calculette
+CMAKE_SOURCE_DIR = /root/CLionProjectsTP/tp05calculette
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/CLionProjects/tp05calculette/cmake-build-debug
+CMAKE_BINARY_DIR = /root/CLionProjectsTP/tp05calculette/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tp05calculette/cmake-build-debug/CMakeFiles /root/CLionProjects/tp05calculette/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjectsTP/tp05calculette/cmake-build-debug/CMakeFiles /root/CLionProjectsTP/tp05calculette/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tp05calculette/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjectsTP/tp05calculette/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

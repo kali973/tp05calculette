@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/root/CLionProjects/tp05calculette/cmake-build-debug"/>
+				<Option working_dir="/root/CLionProjectsTP/tp05calculette/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tp05calculette">
-				<Option output="/root/CLionProjects/tp05calculette/cmake-build-debug/tp05calculette" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/CLionProjects/tp05calculette/cmake-build-debug"/>
+				<Option output="/root/CLionProjectsTP/tp05calculette/cmake-build-debug/tp05calculette" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjectsTP/tp05calculette/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 tp05calculette"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 tp05calculette"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tp05calculette/fast">
-				<Option output="/root/CLionProjects/tp05calculette/cmake-build-debug/tp05calculette" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/CLionProjects/tp05calculette/cmake-build-debug"/>
+				<Option output="/root/CLionProjectsTP/tp05calculette/cmake-build-debug/tp05calculette" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjectsTP/tp05calculette/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,37 +55,37 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 tp05calculette/fast"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 tp05calculette/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/root/CLionProjects/tp05calculette/cmake-build-debug"/>
+				<Option working_dir="/root/CLionProjectsTP/tp05calculette/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/root/CLionProjects/tp05calculette/cmake-build-debug"/>
+				<Option working_dir="/root/CLionProjectsTP/tp05calculette/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjects/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/root/CLionProjectsTP/tp05calculette/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/root/CLionProjects/tp05calculette/main.c">
+		<Unit filename="/root/CLionProjectsTP/tp05calculette/main.c">
 			<Option target="tp05calculette"/>
 		</Unit>
-		<Unit filename="/root/CLionProjects/tp05calculette/CMakeLists.txt">
+		<Unit filename="/root/CLionProjectsTP/tp05calculette/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

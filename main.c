@@ -34,7 +34,7 @@ int main() {
             case 'c':
             case 'C':
 
-                printf("Entrez une chaine de caractéres valide (Exemple : 120+6) : ");
+                printf("Entrez une chaine de caractéres valide (Exemple : 120+6 ou -120+6) : ");
 
                 scanf("%c", str);
 
